@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "EKhcvz2R3YUgj0Er2LFoNhDXqIWgZUIg9FS8uKzfCvTiJt8a3HohwPDlKuO6OuxTPKzzA0YFobM8toJtFu5xfQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\Back\\Back.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj": {}
+    "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\GestionBudget.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj": {
+    "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\GestionBudget.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj",
+        "projectUniqueName": "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\GestionBudget.csproj",
         "projectName": "GestionBudget",
-        "projectPath": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj",
-        "packagesPath": "C:\\Users\\Mars\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\obj\\",
+        "projectPath": "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\GestionBudget.csproj",
+        "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Utilisateur\\Documents\\Git\\GestionBudget\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mars\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Utilisateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -84,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }
