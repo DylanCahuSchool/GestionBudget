@@ -1,0 +1,32 @@
+[
+  {
+    "Category": "Maison",
+    "Amount": 422.75,
+    "Total": 600.00
+  },
+  {
+    "Category": "Nourriture",
+    "Amount": 140.99,
+    "Total": 325.00
+  },
+  {
+    "Category": "Voiture",
+    "Amount": 375.99,
+    "Total": 250.00
+  },
+  {
+    "Category": "Loisir",
+    "Amount": 12.50,
+    "Total": 200.00
+  },
+  {
+    "Category": "Travail",
+    "Amount": 50.00,
+    "Total": 65.00
+  },
+  {
+    "Category": "Achat & Shopping",
+    "Amount": 120.99,
+    "Total": 150.00
+  }
+]

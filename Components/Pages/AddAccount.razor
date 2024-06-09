@@ -1,0 +1,37 @@
+﻿@namespace GestionBudget.Components.Pages
+
+@using GestionBudget.Components.Models
+@using GestionBudget.Components.Services
+@using System.Diagnostics
+
+@inject FakeDataService DataService
+
+@page "/AddAccount"
+
+<PageTitle>Ajouter un compte</PageTitle>
+
+<!--Button-->
+<div class="container">
+    <button class="btn btn-primary" @onclick="launchWebview">Ajouter un compte</button>
+</div>
+
+@code {
+
+    //https://gestion-budget-2-sandbox.biapi.pro/2.0/auth/webview/connect?client_id=74832329&redirect_uri=https://localhost:7042/
+    public string Param1 { get; set; }
+    public int Param2 { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    private void launchWebview()
+    {
+        //redirect to url
+        System.Diagnostics.Process.Start("https://gestion-budget-2-sandbox.biapi.pro/2.0/auth/webview/connect?client_id=74832329&redirect_uri=https://localhost:7042/AddAccount");
+
+
+
+    }
+
+}

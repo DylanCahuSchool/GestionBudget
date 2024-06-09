@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mars\\source\\repos\\GestionBudget\\GestionBudget.csproj",
+      "projectUniqueName": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj",
       "projectName": "GestionBudget",
-      "projectPath": "C:\\Users\\Mars\\source\\repos\\GestionBudget\\GestionBudget.csproj",
+      "projectPath": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\GestionBudget.csproj",
       "packagesPath": "C:\\Users\\Mars\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mars\\source\\repos\\GestionBudget\\obj\\",
+      "outputPath": "C:\\Users\\Mars\\Documents\\git\\GestionBudget\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mars\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,6 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -69,7 +70,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

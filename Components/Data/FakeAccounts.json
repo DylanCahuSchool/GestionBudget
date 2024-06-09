@@ -1,0 +1,14 @@
+[
+  {
+    "Type": "Compte CHQ",
+    "Balance": 2587.25,
+    "Change": 360.52,
+    "IsPositiveChange": false
+  },
+  {
+    "Type": "Livret A",
+    "Balance": 800.00,
+    "Change": 200.00,
+    "IsPositiveChange": true
+  }
+]

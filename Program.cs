@@ -1,10 +1,12 @@
 using GestionBudget.Components;
+using GestionBudget.Components.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.Services.AddRazorComponents();
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+builder.Services.AddSingleton<FakeDataService>();
 
 var app = builder.Build();
 

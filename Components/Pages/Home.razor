@@ -1,33 +1,85 @@
-﻿@page "/"
+﻿@namespace GestionBudget.Components.Pages
+
+@using GestionBudget.Components.Models
+@using GestionBudget.Components.Services
+
+@inject FakeDataService DataService
+
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container">
+    <h1>Soldes des comptes</h1>
 
-Welcome to your new app.
-<!--
-<a href="https://gestion-budget-2-sandbox.biapi.pro/2.0/auth/webview/connect?client_id=74832329&redirect_uri=https://localhost:7042/" class="btn btn-primary">Connect</a>
--->
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Balance</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var account in Accounts)
+            {
+                <tr>
+                    <td>@account.Type</td>
+                    <td>@account.Balance €</td>
+                    <td>@(account.IsPositiveChange ? "▲" : "▼") @account.Change €</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 
+<div class="container">
+    <h1>Dépenses</h1>
 
+    @if (Expenses != null)
+    {
+        <div class="chart-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Dépense</th>
+                        <th>Pourcentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var expense in Expenses)
+                    {
+                        <tr>
+                            <td>@expense.Category</td>
+                            <td>@expense.Amount.ToString("C") / @expense.Total.ToString("C")</td>
+                            <td>@((expense.Amount / expense.Total).ToString("P"))</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
 
 @code {
 
-    private int balance = 0;
+    //https://gestion-budget-2-sandbox.biapi.pro/2.0/auth/webview/connect?client_id=74832329&redirect_uri=https://localhost:7042/
 
-    
+    public List<BankAccount> Accounts { get; set; } = new List<BankAccount>();
 
-        [Parameter]
-        public string code { get; set; }
+    public List<Expense> Expenses { get; set; } = new List<Expense>();
 
-        protected override void OnInitialized()
-        {
-            //if code is not null
-            if (code != null)
-            {
-                //then we can use it
-                Console.WriteLine(code);
-            }
-        }
-    
+    protected override async Task OnInitializedAsync()
+    {
+        Accounts = await DataService.GetAccountsAsync();
+
+        Expenses = await DataService.GetExpensesAsync();
+
+        string prefix = "http://localhost:8000/";
+        CallbackListener listener = new CallbackListener(prefix);
+        await listener.StartListening();
+    }
+
 }
